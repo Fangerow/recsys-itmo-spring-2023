@@ -11,10 +11,10 @@ import tqdm
 
 import yaml
 
-from sim.agents import Recommender, DummyRecommender, RemoteRecommender
-from sim.agents.console import ConsoleRecommender
-from sim.envs import RecEnv
-from sim.envs.config import RecEnvConfigSchema, RecEnvConfig
+from sim.sim.agents import Recommender, DummyRecommender, RemoteRecommender
+from sim.sim.agents.console import ConsoleRecommender
+from sim.sim.envs import RecEnv
+from sim.sim.envs.config import RecEnvConfigSchema, RecEnvConfig
 
 DUMMY = "dummy"
 REMOTE = "remote"

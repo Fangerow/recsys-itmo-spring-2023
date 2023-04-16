@@ -2,7 +2,7 @@ import faiss
 import pandas as pd
 import numpy as np
 
-from sim.envs.config import TrackCatalogConfig
+from sim.sim.envs.config import TrackCatalogConfig
 
 
 class TrackCatalog:

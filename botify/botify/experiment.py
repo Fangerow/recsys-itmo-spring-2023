@@ -25,9 +25,7 @@ class Experiment:
     Represents a single A/B experiment. Assigns
     any user to one of the treatments based on
     experiment name and user ID.
-
     An example usage::
-
         experiment = Experiments.AA
         if experiment.assign(user) == Treatment.C:
             # do control actions
@@ -35,7 +33,6 @@ class Experiment:
         elif experiment.assign(user) == Treatment.T1:
             # do treatment actions
             ...
-
     """
 
     def __init__(self, name: str, split: Split):
@@ -66,5 +63,7 @@ class Experiments:
     CONTEXTUAL = Experiment("CONTEXTUAL", Split.HALF_HALF)
     RECOMMENDERS = Experiment("RECOMMENDERS", Split.SEVEN_WAY)
 
+    CUSTOM_CONTEXTUAL = Experiment("CUSTOM_CONTEXTUAL", Split.HALF_HALF)
+
     def __init__(self):
-        self.experiments = [Experiments.RECOMMENDERS]
+        self.experiments = [Experiments.CUSTOM_CONTEXTUAL]
